@@ -4,10 +4,10 @@ $(document).ready(function () {
   let stream;
 
   //!!!!!Change the line below!!!!!
-  const VOICE_TOKEN_URL = 'https://<YOURFUNCTIONURL>.twil.io/voice_token.js'; //Change This
+  const VOICE_TOKEN_URL = '<YOURFUNCTIONURL>/voice_token.js'; //Change This
 
   //!!!!!Change the line below!!!!!
-  const BRAIN_FUNCTION_URL = 'https://<YOURFUNCTIONURL>.twil.io/brain.js'; //Change This
+  const BRAIN_FUNCTION_URL = '<YOURFUNCTIONURL>/brain.js'; //Change This
 
   /*----------  Start Helper Functions  ----------*/
 
@@ -44,7 +44,7 @@ $(document).ready(function () {
     // we simply make a request to our brain.js
     // function with the desired sound effect.
 
-    let sound = $(this).data('sound-file-name');
+    let sound = $(this).data('sound-file');
     postSoundboardTask(sound);
     this.blur(); // Cosmetic
   });
